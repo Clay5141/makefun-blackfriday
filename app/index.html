@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DealBeacon — Black Friday 2026 Deal Finder</title>
+<meta name="description" content="31 real Black Friday and Cyber Monday deals, each checked on Nov 27, 2026, with store, price, discount and an honest verdict.">
+<link rel="stylesheet" href="style.css">
+<script type="module" src="app.js"></script>
+</head>
+<body>
+<header class="masthead">
+  <div class="masthead-inner">
+    <p class="kicker">Black Friday &middot; Cyber Monday &middot; Nov 27&ndash;30, 2026</p>
+    <h1><span class="beacon" aria-hidden="true">&#9679;</span> DealBeacon</h1>
+    <p class="tagline">Real deals, checked today — not every sale is a bargain, and this page says which ones are.</p>
+    <dl class="stats" id="stats">
+      <div><dt>Deals checked</dt><dd id="stat-count">&ndash;</dd></div>
+      <div><dt>Total savings</dt><dd id="stat-savings">&ndash;</dd></div>
+      <div><dt>Biggest cut</dt><dd id="stat-best">&ndash;</dd></div>
+      <div><dt>Checked</dt><dd>Nov 27, 2026</dd></div>
+    </dl>
+  </div>
+</header>
+
+<main id="app">
+  <section class="controls" aria-label="Find a deal">
+    <label class="search-box">
+      <span class="visually-hidden">Search deals</span>
+      <input id="search" type="search" placeholder="Search a product, brand or store&hellip;" autocomplete="off">
+    </label>
+    <div class="control-row">
+      <label>Category
+        <select id="category">
+          <option value="">All categories</option>
+        </select>
+      </label>
+      <label>Store
+        <select id="store">
+          <option value="">All stores</option>
+        </select>
+      </label>
+      <label>Min. discount
+        <select id="min-discount">
+          <option value="0">Any discount</option>
+          <option value="20">20% off or more</option>
+          <option value="30">30% off or more</option>
+          <option value="40">40% off or more</option>
+          <option value="50">50% off or more</option>
+        </select>
+      </label>
+      <label>Verdict
+        <select id="verdict">
+          <option value="">All verdicts</option>
+          <option value="new-low">New low only</option>
+          <option value="strong">Strong price only</option>
+          <option value="routine">Routine sale only</option>
+        </select>
+      </label>
+      <label>Sort by
+        <select id="sort">
+          <option value="discount">Biggest discount first</option>
+          <option value="verdict">Best verdict first</option>
+          <option value="price-asc">Lowest price first</option>
+          <option value="price-desc">Highest price first</option>
+          <option value="savings">Biggest saving first</option>
+        </select>
+      </label>
+    </div>
+    <p class="result-line" id="result-line" role="status"></p>
+  </section>
+
+  <section id="deal-list" class="deal-grid" aria-live="polite"></section>
+
+  <section id="deal-detail" class="detail" hidden></section>
+
+  <p class="empty" id="empty" hidden>No deals match. Try clearing a filter or searching for something else.</p>
+</main>
+
+<footer class="colophon">
+  <h2>How these deals were checked</h2>
+  <p>Every price on this page was read on <strong>Nov 27, 2026</strong> from the deals source named on each deal — a publication that names the store — and cross-checked the same day. Each card shows the sale price, the usual (list) price, the discount computed from those two prices, the store, and a link to the store. Links open the store's search for the exact product name, so you land on the matching product; no product-page address was ever guessed. Prices can change or sell out — check the store page before you buy.</p>
+  <p>Verdicts: <strong>New low</strong> means the lowest price the source has tracked for that item. <strong>Strong price</strong> means a cut well below the item's usual sale level. <strong>Routine sale</strong> means a real discount, but one this item sees often, or a small cut on a new product. A routine sale can still be worth buying — it just is not a bargain by itself.</p>
+  <p>DealBeacon is an independent roundup. It is not affiliated with Amazon, Best Buy, Walmart, Target, or any brand shown here. Store and brand names belong to their owners.</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,60 @@
+// Deals for DealBeacon, Black Friday 2026.
+// Every price below was read by the builder on Nov 27, 2026 from the
+// named deals source, which names the store. Sale and list prices are
+// stored as numbers; the discount is computed from them, never typed in,
+// so the percentage on screen always matches the two prices.
+// Links go to the store's own search page for the exact product name:
+// no product-page URL is ever guessed or invented.
+export const CHECKED_ON = "Nov 27, 2026";
+export const CURRENCIES = "USD";
+
+export const DEALS = [
+  { id: "airpods-pro-3", name: "Apple AirPods Pro 3", cat: "Audio", store: "Amazon", sale: 179, list: 249, url: "https://www.amazon.com/s?k=Apple+AirPods+Pro+3", source: "9to5Mac Black Friday roundup, updated Nov 23, 2026", verdict: "strong", note: "$70 under list. 9to5Mac tracked it at $199 earlier in November; it dropped again to $179 for Black Friday week." },
+  { id: "watch-s12-42", name: "Apple Watch Series 12 GPS 42mm", cat: "Wearables", store: "Amazon", sale: 329, list: 399, url: "https://www.amazon.com/s?k=Apple+Watch+Series+12+GPS+42mm", source: "9to5Mac Black Friday roundup, updated Nov 23, 2026", verdict: "new-low", note: "Lowest price 9to5Mac has tracked for this model; the whole Series 12 line is $70 off." },
+  { id: "watch-se3-40", name: "Apple Watch SE 3 GPS 40mm", cat: "Wearables", store: "Amazon", sale: 199, list: 249, url: "https://www.amazon.com/s?k=Apple+Watch+SE+3+GPS+40mm", source: "9to5Mac Black Friday roundup, updated Nov 23, 2026", verdict: "strong", note: "$50 off the current SE model in both Midnight and Starlight." },
+  { id: "macbook-air-m5-13", name: "Apple MacBook Air 13-inch (M5, 16GB/512GB)", cat: "Computers", store: "Amazon", sale: 1049, list: 1299, url: "https://www.amazon.com/s?k=Apple+MacBook+Air+13-inch+M5+16GB+512GB", source: "9to5Mac Black Friday roundup, updated Nov 23, 2026", verdict: "strong", note: "$250 off; the best MacBook Air price in months, matched at Best Buy." },
+  { id: "macbook-neo-256", name: "Apple MacBook Neo 256GB", cat: "Computers", store: "Amazon", sale: 650, list: 700, url: "https://www.amazon.com/s?k=Apple+MacBook+Neo+256GB", source: "9to5Mac Black Friday roundup, updated Nov 23, 2026", verdict: "routine", note: "Only $50 off a brand-new model. Apple itself offers a gift card with it instead of a real cut." },
+  { id: "airpods-max-2", name: "Apple AirPods Max 2", cat: "Audio", store: "Amazon", sale: 419, list: 549, url: "https://www.amazon.com/s?k=Apple+AirPods+Max+2", source: "9to5Mac Black Friday roundup, updated Nov 23, 2026", verdict: "strong", note: "$130 off. The price dropped again from $429 earlier in the week." },
+  { id: "airtag-2-4pk", name: "Apple AirTag 2 (4-pack)", cat: "Accessories", store: "Amazon", sale: 70, list: 99, url: "https://www.amazon.com/s?k=Apple+AirTag+2+4-pack", source: "9to5Mac Black Friday roundup, updated Nov 23, 2026", verdict: "new-low", note: "Matches the all-time low 9to5Mac has tracked for the 4-pack." },
+  { id: "mac-mini-m6", name: "Apple Mac mini (M6, 16GB/256GB)", cat: "Computers", store: "Amazon", sale: 779, list: 899, url: "https://www.amazon.com/s?k=Apple+Mac+mini+M6+16GB+256GB", source: "9to5Mac Black Friday roundup, updated Nov 23, 2026", verdict: "strong", note: "$120 off the new M6 mini; the 512GB model is $150 off at $949." },
+  { id: "tcl-65-fire", name: "TCL 65-inch 4K UHD Fire TV (2026)", cat: "TVs", store: "Best Buy", sale: 229.99, list: 469.99, url: "https://www.bestbuy.com/site/searchpage.jsp?st=TCL+65-inch+4K+Fire+TV", source: "Best Buy Black Friday release, Nov 17, 2026, via neeshu.com", verdict: "new-low", note: "$240 off. Best Buy's headline Black Friday TV doorbuster, live since Nov 19." },
+  { id: "hisense-65-roku", name: "Hisense 65-inch H5R1 4K Roku TV", cat: "TVs", store: "Walmart", sale: 228, list: 398, url: "https://www.walmart.com/search?q=Hisense+65-inch+H5R1+4K+Roku+TV", source: "Benzinga Black Friday tech deals, Nov 27, 2026, via TradingView", verdict: "strong", note: "Walmart doorbuster at $228, $170 under list; the 55-inch version is $168." },
+  { id: "insignia-65-fire", name: "Insignia 65-inch LED 4K Fire TV", cat: "TVs", store: "Best Buy", sale: 299.99, list: 449.99, url: "https://www.bestbuy.com/site/searchpage.jsp?st=Insignia+65-inch+LED+4K+Fire+TV", source: "MacRumors Black Friday roundup, updated Nov 26, 2026", verdict: "strong", note: "$150 off in MacRumors' Best Buy TV list." },
+  { id: "lg-oled-48", name: "LG 48-inch OLED evo 4K Smart TV", cat: "TVs", store: "Best Buy", sale: 599.99, list: 1199.99, url: "https://www.bestbuy.com/site/searchpage.jsp?st=LG+48-inch+OLED+4K+Smart+TV", source: "MacRumors Black Friday roundup, updated Nov 26, 2026", verdict: "strong", note: "$600 off — half price on an OLED panel." },
+  { id: "samsung-oled-65", name: "Samsung 65-inch OLED 4K Smart TV", cat: "TVs", store: "Best Buy", sale: 899.99, list: 2099.99, url: "https://www.bestbuy.com/site/searchpage.jsp?st=Samsung+65-inch+OLED+4K+Smart+TV", source: "MacRumors Black Friday roundup, updated Nov 26, 2026", verdict: "strong", note: "$1,200 off — the deepest TV cut in Best Buy's Black Friday ad." },
+  { id: "hp-omnibook-5", name: "HP OmniBook 5 14-inch 2K OLED Touchscreen Laptop", cat: "Computers", store: "Best Buy", sale: 449.99, list: 799.99, url: "https://www.bestbuy.com/site/searchpage.jsp?st=HP+OmniBook+5+14-inch+OLED+laptop", source: "Best Buy Black Friday release, Nov 17, 2026, via Benzinga", verdict: "strong", note: "$350 off. A 2K OLED touchscreen laptop for under $450." },
+  { id: "sony-xm5", name: "Sony WH-1000XM5 Noise Canceling Headphones", cat: "Audio", store: "Best Buy", sale: 169, list: 398, url: "https://www.bestbuy.com/site/searchpage.jsp?st=Sony+WH-1000XM5+headphones", source: "Benzinga Black Friday tech deals, Nov 27, 2026, via TradingView", verdict: "strong", note: "$229 off Sony's flagship noise-canceling headphones." },
+  { id: "bose-qc", name: "Bose QuietComfort Headphones", cat: "Audio", store: "Amazon", sale: 169, list: 359, url: "https://www.amazon.com/s?k=Bose+QuietComfort+Headphones", source: "Benzinga Black Friday tech deals, Nov 27, 2026, via TradingView", verdict: "strong", note: "Over half off. The same $169 price is listed at Target, so it is not an Amazon-only dip." },
+  { id: "beats-studio-pro", name: "Beats Studio Pro Headphones", cat: "Audio", store: "Walmart", sale: 99, list: 299, url: "https://www.walmart.com/search?q=Beats+Studio+Pro+headphones", source: "Benzinga Black Friday tech deals, Nov 27, 2026, via TradingView", verdict: "new-low", note: "$200 off — the lowest price seen for Studio Pro this season." },
+  { id: "beats-solo-4", name: "Beats Solo 4 On-Ear Headphones", cat: "Audio", store: "Target", sale: 79.99, list: 199.99, url: "https://www.target.com/s?searchTerm=Beats+Solo+4+headphones", source: "Benzinga Black Friday tech deals, Nov 27, 2026, via TradingView", verdict: "strong", note: "60% off at Target; the same model is $99.95 at Amazon." },
+  { id: "switch2-bundle", name: "Nintendo Switch 2 + Mario Kart World Bundle", cat: "Gaming", store: "Target", sale: 499.99, list: 549.99, url: "https://www.target.com/s?searchTerm=Nintendo+Switch+2+Mario+Kart+World+bundle", source: "Nintendo Black Friday announcement, via nerdsnack.com, Nov 26, 2026", verdict: "routine", note: "Only $50 off, and the first discount ever on the bundle. Buy it for the console, not the saving. Runs Nov 22 to Dec 5." },
+  { id: "dualsense", name: "PlayStation DualSense Wireless Controller", cat: "Gaming", store: "Best Buy", sale: 54.99, list: 74.99, url: "https://www.bestbuy.com/site/searchpage.jsp?st=PlayStation+DualSense+Wireless+Controller", source: "TechRadar Black Friday deals, Nov 2026", verdict: "strong", note: "$20 off. The usual sale price is $64.99, so this beats the regular discount." },
+  { id: "nba-2k27-ps5", name: "NBA 2K27 (PlayStation 5)", cat: "Gaming", store: "Amazon", sale: 29.99, list: 69.99, url: "https://www.amazon.com/s?k=NBA+2K27+PlayStation+5", source: "ComicBook Amazon Black Friday sale, Nov 2026", verdict: "strong", note: "57% off a 2026 sports release; Target lists it at the same $29.99." },
+  { id: "lego-tiger", name: "LEGO Creator 3-in-1 Majestic Tiger", cat: "Toys", store: "Amazon", sale: 29.99, list: 42.39, url: "https://www.amazon.com/s?k=LEGO+Creator+3-in-1+Majestic+Tiger", source: "ComicBook Amazon Black Friday sale, Nov 2026", verdict: "strong", note: "29% off. LEGO rarely discounts Creator 3-in-1 sets this deep." },
+  { id: "lego-tie", name: "LEGO Star Wars TIE Fighter with Imperial Hangar Rack", cat: "Toys", store: "Amazon", sale: 99.99, list: 124.99, url: "https://www.amazon.com/s?k=LEGO+Star+Wars+TIE+Fighter+Imperial+Hangar+Rack", source: "ComicBook Amazon Black Friday sale, Nov 2026", verdict: "routine", note: "20% off — a standard LEGO sale, not a standout." },
+  { id: "dyson-v9", name: "Dyson V9 Motorbar Cordless Vacuum", cat: "Cleaning", store: "Amazon", sale: 269.95, list: 599.99, url: "https://www.amazon.com/s?k=Dyson+V9+Motorbar+cordless+vacuum", source: "PopSci Amazon Black Friday deals, updated Nov 24, 2026", verdict: "new-low", note: "55% off; the lowest Dyson stick price in Amazon's Black Friday list. Target lists the same model at $269.99." },
+  { id: "kitchenaid-artisan", name: "KitchenAid Artisan 5-Quart Tilt-Head Stand Mixer", cat: "Kitchen", store: "Amazon", sale: 349, list: 499.99, url: "https://www.amazon.com/s?k=KitchenAid+Artisan+5-Quart+stand+mixer", source: "CNN Underscored Black Friday deals, Nov 25, 2026", verdict: "strong", note: "$150 off in nearly every color; $30 under the October Prime Day price, per CNN Underscored." },
+  { id: "ninja-airfryer-xl", name: "Ninja Air Fryer XL", cat: "Kitchen", store: "Amazon", sale: 89.99, list: 179.99, url: "https://www.amazon.com/s?k=Ninja+Air+Fryer+XL", source: "PopSci Amazon Black Friday deals, updated Nov 24, 2026", verdict: "strong", note: "Half price on Ninja's big-basket air fryer." },
+  { id: "shark-nevertouch", name: "Shark PowerDetect NeverTouch Robot Vacuum and Mop", cat: "Cleaning", store: "Amazon", sale: 349.99, list: 899.99, url: "https://www.amazon.com/s?k=Shark+PowerDetect+NeverTouch+robot+vacuum", source: "PopSci Amazon Black Friday deals, updated Nov 24, 2026", verdict: "strong", note: "61% off Shark's flagship robot vacuum and mop." },
+  { id: "roborock-qrevo-2-pro", name: "Roborock Qrevo 2 Pro Robot Vacuum and Mop", cat: "Cleaning", store: "Amazon", sale: 450, list: 800, url: "https://www.amazon.com/s?k=Roborock+Qrevo+2+Pro+robot+vacuum", source: "Miami Herald bargain roundup, Nov 2026", verdict: "strong", note: "$350 off Roborock's mid-range robot mop." },
+  { id: "vitamix-5200", name: "Vitamix 5200 Professional-Grade Blender", cat: "Kitchen", store: "Amazon", sale: 300, list: 500, url: "https://www.amazon.com/s?k=Vitamix+5200+blender", source: "Miami Herald bargain roundup, Nov 2026", verdict: "strong", note: "$200 off the blender most test kitchens recommend." },
+  { id: "galaxy-s26-fe", name: "Samsung Galaxy S26 FE", cat: "Phones", store: "Best Buy", sale: 499.99, list: 699.99, url: "https://www.bestbuy.com/site/searchpage.jsp?st=Samsung+Galaxy+S26+FE", source: "Benzinga Black Friday tech deals, Nov 27, 2026, via TradingView", verdict: "strong", note: "$200 off Samsung's new fan-edition phone." },
+  { id: "kindle-paperwhite", name: "Amazon Kindle Paperwhite", cat: "Reading", store: "Target", sale: 129.99, list: 199.99, url: "https://www.target.com/s?searchTerm=Kindle+Paperwhite", source: "Benzinga Black Friday tech deals, Nov 27, 2026, via TradingView", verdict: "strong", note: "$70 off at Target." },
+];
+
+export const VERDICT_LABELS = {
+  "new-low": "New low",
+  "strong": "Strong price",
+  "routine": "Routine sale",
+};
+
+export const CATEGORIES = ["Audio", "Wearables", "Computers", "TVs", "Gaming", "Toys", "Kitchen", "Cleaning", "Phones", "Reading", "Accessories"];
+export const STORES = ["Amazon", "Best Buy", "Walmart", "Target"];
+
+export function discountPct(d) {
+  return Math.round((1 - d.sale / d.list) * 100);
+}
+
+export function money(n) {
+  return "$" + n.toFixed(2).replace(/\.00$/, "");
+}
